@@ -1,11 +1,16 @@
 let mylibrary = [];
 
-function Book(name, author, pages, status) {
-    this.name = name;
-    this.author = author;
-    this.pages = pages;
-    this.status = status;
-    this.id = crypto.randomUUID();
+class Book{
+    constructor(name,author,pages,status) {
+        this.name = name;
+        this.author = author;
+        this.pages = pages;
+        this.status = status;
+        this.id=crypto.randomUUID()
+    }
+    toggleReadStatus() {
+        this.status = (this.status === "Already Read") ? "Not yet read" : "Already Read";
+    }
 }
 
 function addBookToLibrary(name, author, pages, status) {
@@ -63,8 +68,7 @@ container.addEventListener("click", (e) => {
     if (e.target.classList.contains("readStatus")) {
         let dataId = e.target.dataset.id;
         let id = mylibrary.find((item) => item.id == dataId);
-        id.status =
-            id.status == "Not yet read" ? "Already Read" : "Not yet read";
+        id.toggleReadStatus()
     }
     
     if (e.target.classList.contains("cancelBtn")) {

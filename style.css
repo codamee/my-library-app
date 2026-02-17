@@ -9,7 +9,7 @@ body {
     padding: 8px;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 17vh 80vh;
+    grid-template-rows: 14vh 83vh;
     gap: 5px;
 }
 nav {
