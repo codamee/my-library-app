@@ -3,7 +3,7 @@
 A dynamic book-tracking dashboard built with Object-Oriented JavaScript. This project focuses on **Data Structures**, **ES6 Classes**, and advanced **DOM Manipulation** using data-attributes.
 
 <p>
-  <img src="./screenshot.png" alt="Library App Preview" width="500">
+  <img src="./Assets/screenshot.png" alt="Library App Preview" width="500">
 </p>
 
 ## 🚀 Live Demo
